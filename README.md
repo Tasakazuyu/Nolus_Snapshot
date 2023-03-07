@@ -18,6 +18,7 @@ nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book
 cd $HOME/.nolus
 rm -rf data
 wget -O wget -O nolus-snapshot-20230307.tar.lz4 https://snapshot.nolus.trnodes.my.id/nolus/nolus-snapshot-20230307.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.nolus
+mv $HOME/.nolus/priv_validator_state.json.backup $HOME/.nolus/data/priv_validator_state.json
 ```
 
 ## Restart Nolus node and see the log
