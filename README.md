@@ -10,6 +10,7 @@ sudo apt install lz4 -y
 sudo systemctl stop nolusd
 cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
 sudo systemctl disable nolusd
+rm -rf $HOME/.nolus/data
 nolusd tendermint unsafe-reset-all --home $HOME/.nolus --keep-addr-book
 ```
 
