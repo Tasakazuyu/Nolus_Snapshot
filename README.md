@@ -5,7 +5,7 @@
 sudo apt update
 sudo apt install lz4 -y
 ```
-## Stop Nolus node
+## Stop Nolus node and reset data
 ```
 sudo systemctl stop nolusd
 cp $HOME/.nolus/data/priv_validator_state.json $HOME/.nolus/priv_validator_state.json.backup
